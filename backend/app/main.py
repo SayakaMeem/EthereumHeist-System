@@ -603,3 +603,20 @@ def full_pipeline(
         omega=omega,
         crawl_missing=crawl_missing,
     )
+
+
+@app.get("/api/health")
+def api_health():
+    return {
+        "status": "healthy",
+        "service": "ethereumheist-backend",
+        "environment": APP_ENV,
+    }
+
+@app.get("/")
+def home():
+    return {
+        "message": "EthereumHeist AML backend is running",
+        "status": "online",
+    }
+
