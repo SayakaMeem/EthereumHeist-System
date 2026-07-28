@@ -1,0 +1,2 @@
+source,target,transaction_type,amount,hash,timeStamp,label
+0x08dd16de9afbc4368d8efdc66fc41b8dbc5eadb1,0x48acf41d10a063f9a6b718b9aad2e2ff5b319ca2,normal_eth,0.18,0xe7ed4ac6854d7cdeafdc8eae0f89941d78fce0d6527760c7a4ad6781d281a9c1,1647996092,candidate_layering

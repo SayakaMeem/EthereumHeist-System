@@ -1,0 +1,32 @@
+{
+  "root_address": "0x56eb4a5f64fa21e13548b95109f42fa08a644628",
+  "max_depth": 1,
+  "max_addresses_per_layer": 1,
+  "beta": 0.01,
+  "omega": 1000,
+  "visited_address_count": 2,
+  "tracked_edge_count": 950,
+  "layer_address_count": 3,
+  "edges_file": "D:\\EthereumHeist_System\\results\\tracking\\56eb4a5f64fa21e13548b95109f42fa08a644628_multihop_edges.csv",
+  "layers_file": "D:\\EthereumHeist_System\\results\\tracking\\56eb4a5f64fa21e13548b95109f42fa08a644628_multihop_layers.csv",
+  "summary_file": "D:\\EthereumHeist_System\\results\\tracking\\56eb4a5f64fa21e13548b95109f42fa08a644628_multihop_summary.json",
+  "errors": [],
+  "crawl_logs_preview": [],
+  "layer_preview": [
+    {
+      "address": "0x56eb4a5f64fa21e13548b95109f42fa08a644628",
+      "layer": 0,
+      "role": "placement"
+    },
+    {
+      "address": "0xa0c68c638235ee32657e8f720a23cec1bfc77c77",
+      "layer": 1,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0x8484ef722627bf18ca5ae6bcf031c23e6e922b30",
+      "layer": 2,
+      "role": "candidate_layering"
+    }
+  ]
+}

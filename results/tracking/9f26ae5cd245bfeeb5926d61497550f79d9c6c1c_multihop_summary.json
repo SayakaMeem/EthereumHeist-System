@@ -1,0 +1,28 @@
+{
+  "root_address": "0x9f26ae5cd245bfeeb5926d61497550f79d9c6c1c",
+  "max_depth": 1,
+  "max_addresses_per_layer": 1,
+  "beta": 0.01,
+  "omega": 1000,
+  "visited_address_count": 1,
+  "tracked_edge_count": 0,
+  "layer_address_count": 1,
+  "edges_file": "D:\\EthereumHeist_System\\results\\tracking\\9f26ae5cd245bfeeb5926d61497550f79d9c6c1c_multihop_edges.csv",
+  "layers_file": "D:\\EthereumHeist_System\\results\\tracking\\9f26ae5cd245bfeeb5926d61497550f79d9c6c1c_multihop_layers.csv",
+  "summary_file": "D:\\EthereumHeist_System\\results\\tracking\\9f26ae5cd245bfeeb5926d61497550f79d9c6c1c_multihop_summary.json",
+  "errors": [
+    {
+      "address": "0x9f26ae5cd245bfeeb5926d61497550f79d9c6c1c",
+      "layer": 0,
+      "error": "No columns to parse from file"
+    }
+  ],
+  "crawl_logs_preview": [],
+  "layer_preview": [
+    {
+      "address": "0x9f26ae5cd245bfeeb5926d61497550f79d9c6c1c",
+      "layer": 0,
+      "role": "placement"
+    }
+  ]
+}

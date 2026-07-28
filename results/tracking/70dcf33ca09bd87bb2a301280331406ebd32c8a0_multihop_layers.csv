@@ -1,0 +1,4 @@
+address,layer,role
+0x70dcf33ca09bd87bb2a301280331406ebd32c8a0,0,placement
+0x9eee6862b78fb6f9627d7d5a908d2114814fcecd,1,candidate_layering
+0x986a2fca9eda0e06fbf7839b89bfc006ee2a23dd,2,candidate_layering

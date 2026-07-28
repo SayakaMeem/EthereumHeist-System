@@ -1,0 +1,2 @@
+blockNumber,transactionIndex,timeStamp,hash,from,to,value,contractAddress,input,type,gas,gasUsed,traceId,isError,errCode
+12369760,4,1620158293,0xa877e18bbdcf69b751f56b4aa5b91a903ae69de2d775f1eb27fba4ba25abff2a,0x1f98431c8ad98523631ae4a59f267346ea31f984,,0,0x6c6bc977e13df9b0de53b251522280bb72383700,,create,5357348,4435593,0_1_0,0,

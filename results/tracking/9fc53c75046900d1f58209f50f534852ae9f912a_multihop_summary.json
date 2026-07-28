@@ -1,0 +1,151 @@
+{
+  "root_address": "0x9fc53c75046900d1f58209f50f534852ae9f912a",
+  "max_depth": 2,
+  "max_addresses_per_layer": 3,
+  "beta": 0.01,
+  "omega": 1000,
+  "visited_address_count": 7,
+  "tracked_edge_count": 503,
+  "layer_address_count": 10,
+  "edges_file": "D:\\EthereumHeist_System\\results\\tracking\\9fc53c75046900d1f58209f50f534852ae9f912a_multihop_edges.csv",
+  "layers_file": "D:\\EthereumHeist_System\\results\\tracking\\9fc53c75046900d1f58209f50f534852ae9f912a_multihop_layers.csv",
+  "summary_file": "D:\\EthereumHeist_System\\results\\tracking\\9fc53c75046900d1f58209f50f534852ae9f912a_multihop_summary.json",
+  "errors": [],
+  "crawl_logs_preview": [
+    {
+      "address": "0x9fc53c75046900d1f58209f50f534852ae9f912a",
+      "status": "already_crawled"
+    },
+    {
+      "address": "0x551a4fe9388ff34a4f9b289e092ea3ed3d201b3e",
+      "status": "newly_crawled",
+      "crawler_result": {
+        "address": "0x551a4fe9388ff34a4f9b289e092ea3ed3d201b3e",
+        "normal_transactions": 1000,
+        "internal_transactions": 531,
+        "erc20_transactions": 156,
+        "saved_files": {
+          "normal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x551a4fe9388ff34a4f9b289e092ea3ed3d201b3e_normal.csv",
+          "internal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x551a4fe9388ff34a4f9b289e092ea3ed3d201b3e_internal.csv",
+          "erc20": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x551a4fe9388ff34a4f9b289e092ea3ed3d201b3e_erc20.csv"
+        }
+      }
+    },
+    {
+      "address": "0xb1302743acf31f567e9020810523f5030942e211",
+      "status": "newly_crawled",
+      "crawler_result": {
+        "address": "0xb1302743acf31f567e9020810523f5030942e211",
+        "normal_transactions": 17,
+        "internal_transactions": 0,
+        "erc20_transactions": 13,
+        "saved_files": {
+          "normal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0xb1302743acf31f567e9020810523f5030942e211_normal.csv",
+          "internal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0xb1302743acf31f567e9020810523f5030942e211_internal.csv",
+          "erc20": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0xb1302743acf31f567e9020810523f5030942e211_erc20.csv"
+        }
+      }
+    },
+    {
+      "address": "0x439c0da3061ef171090e8a723f930bb14bea509c",
+      "status": "already_crawled"
+    },
+    {
+      "address": "0x149915f1fd17fe5899adac2542be90690ed8a526",
+      "status": "newly_crawled",
+      "crawler_result": {
+        "address": "0x149915f1fd17fe5899adac2542be90690ed8a526",
+        "normal_transactions": 1000,
+        "internal_transactions": 1,
+        "erc20_transactions": 0,
+        "saved_files": {
+          "normal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x149915f1fd17fe5899adac2542be90690ed8a526_normal.csv",
+          "internal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x149915f1fd17fe5899adac2542be90690ed8a526_internal.csv",
+          "erc20": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x149915f1fd17fe5899adac2542be90690ed8a526_erc20.csv"
+        }
+      }
+    },
+    {
+      "address": "0xc84cf3277549845d6a6ba7e761d2fdfa56663546",
+      "status": "newly_crawled",
+      "crawler_result": {
+        "address": "0xc84cf3277549845d6a6ba7e761d2fdfa56663546",
+        "normal_transactions": 2,
+        "internal_transactions": 0,
+        "erc20_transactions": 0,
+        "saved_files": {
+          "normal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0xc84cf3277549845d6a6ba7e761d2fdfa56663546_normal.csv",
+          "internal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0xc84cf3277549845d6a6ba7e761d2fdfa56663546_internal.csv",
+          "erc20": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0xc84cf3277549845d6a6ba7e761d2fdfa56663546_erc20.csv"
+        }
+      }
+    },
+    {
+      "address": "0x0e4245ccb9954ead73f8bab13607cd2d86efc84c",
+      "status": "newly_crawled",
+      "crawler_result": {
+        "address": "0x0e4245ccb9954ead73f8bab13607cd2d86efc84c",
+        "normal_transactions": 1000,
+        "internal_transactions": 2,
+        "erc20_transactions": 1,
+        "saved_files": {
+          "normal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x0e4245ccb9954ead73f8bab13607cd2d86efc84c_normal.csv",
+          "internal": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x0e4245ccb9954ead73f8bab13607cd2d86efc84c_internal.csv",
+          "erc20": "D:\\EthereumHeist_System\\data\\raw\\transactions\\0x0e4245ccb9954ead73f8bab13607cd2d86efc84c_erc20.csv"
+        }
+      }
+    }
+  ],
+  "layer_preview": [
+    {
+      "address": "0x9fc53c75046900d1f58209f50f534852ae9f912a",
+      "layer": 0,
+      "role": "placement"
+    },
+    {
+      "address": "0x439c0da3061ef171090e8a723f930bb14bea509c",
+      "layer": 1,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0x551a4fe9388ff34a4f9b289e092ea3ed3d201b3e",
+      "layer": 1,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0xb1302743acf31f567e9020810523f5030942e211",
+      "layer": 1,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0x149915f1fd17fe5899adac2542be90690ed8a526",
+      "layer": 2,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0xc84cf3277549845d6a6ba7e761d2fdfa56663546",
+      "layer": 2,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0x0e4245ccb9954ead73f8bab13607cd2d86efc84c",
+      "layer": 2,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0xee261291f38538b7d75b0b42dd16cdc05620548d",
+      "layer": 3,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0x0392b64b8bfda184f0a72ce37d73dc7df978c4f7",
+      "layer": 3,
+      "role": "candidate_layering"
+    },
+    {
+      "address": "0xa25d6e6e02d1fd7a886b83a906c91cde7ed8ddfc",
+      "layer": 3,
+      "role": "candidate_layering"
+    }
+  ]
+}
