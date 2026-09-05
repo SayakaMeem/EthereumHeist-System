@@ -1,247 +1,382 @@
-<h2>🧪 Software Testing and Quality Assurance</h2>
+<div align="center">
+
+# 🛡️ EthereumHeist AML System
+
+### Explainable Ethereum Fund-Flow Tracking, AML Forensics, Service Matching and Dashboard Evidence Generation
 
 <p>
-The EthereumHeist AML System was validated through professional manual QA practices
-to ensure functional correctness, API reliability, database consistency, and stable
-frontend-backend communication.
+<img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Frontend-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/UI-React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Database-DuckDB-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Blockchain-Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white"/>
 </p>
-
-<h3>🎯 Testing Objectives</h3>
-
-<ul>
-<li>Verify that all major application workflows work according to requirements.</li>
-<li>Validate transaction tracking and AML analysis functionality.</li>
-<li>Ensure API responses are accurate and reliable.</li>
-<li>Verify database consistency and data integrity.</li>
-<li>Identify, document, and track software defects.</li>
-<li>Ensure system stability after updates through regression testing.</li>
-</ul>
-
-
-<h3>✅ Testing Activities Performed</h3>
-
-<table>
-<tr>
-<th>Testing Type</th>
-<th>Description</th>
-</tr>
-
-<tr>
-<td>Functional Testing</td>
-<td>
-Verified core features including Ethereum address analysis,
-multi-hop transaction tracking, risk scoring, service matching,
-graph generation, and evidence export.
-</td>
-</tr>
-
-<tr>
-<td>Regression Testing</td>
-<td>
-Retested existing functionality after updates to ensure new changes
-did not break previously working modules.
-</td>
-</tr>
-
-<tr>
-<td>API Testing</td>
-<td>
-Validated REST API endpoints, request parameters, response formats,
-successful responses, and error handling using Postman.
-</td>
-</tr>
-
-<tr>
-<td>Database Testing</td>
-<td>
-Checked transaction storage, retrieval accuracy, data consistency,
-and validation of generated investigation records.
-</td>
-</tr>
-
-<tr>
-<td>Error Handling Testing</td>
-<td>
-Tested invalid inputs, missing parameters, unavailable resources,
-and unexpected system behavior.
-</td>
-</tr>
-
-<tr>
-<td>Input Validation Testing</td>
-<td>
-Verified correct handling of valid and invalid Ethereum addresses,
-parameters, and user inputs.
-</td>
-</tr>
-
-</table>
-
-
-<h3>🧪 Testing Scope</h3>
-
-<table>
-
-<tr>
-<th>Module</th>
-<th>Testing Performed</th>
-</tr>
-
-<tr>
-<td>Frontend Dashboard</td>
-<td>
-UI workflow testing, data display validation,
-API response rendering, and user interaction testing.
-</td>
-</tr>
-
-<tr>
-<td>FastAPI Backend</td>
-<td>
-Endpoint testing, request validation,
-response verification, and error handling.
-</td>
-</tr>
-
-<tr>
-<td>Transaction Tracking Engine</td>
-<td>
-Validation of one-hop and multi-hop fund tracking,
-layer generation, and edge creation.
-</td>
-</tr>
-
-<tr>
-<td>Risk Scoring Module</td>
-<td>
-Verification of risk score calculation,
-risk levels, and suspicious transaction labeling.
-</td>
-</tr>
-
-<tr>
-<td>Evidence Generation</td>
-<td>
-Validation of CSV, JSON summaries,
-and downloadable investigation outputs.
-</td>
-</tr>
-
-</table>
-
-
-<h3>🛠️ Testing Tools</h3>
-
-<table>
-
-<tr>
-<th>Tool</th>
-<th>Purpose</th>
-</tr>
-
-<tr>
-<td>Postman</td>
-<td>REST API testing and response validation</td>
-</tr>
-
-<tr>
-<td>SQL</td>
-<td>Database validation and data integrity checking</td>
-</tr>
-
-<tr>
-<td>Browser Developer Tools</td>
-<td>Frontend debugging and network inspection</td>
-</tr>
-
-<tr>
-<td>Jira</td>
-<td>Bug tracking and defect management</td>
-</tr>
-
-</table>
-
-
-<h3>📋 QA Documentation</h3>
 
 <p>
-Complete testing documentation is available in the 
-<code>/testing</code> directory.
+<img src="https://img.shields.io/badge/AML-Tracking-red?style=flat-square"/>
+<img src="https://img.shields.io/badge/Graph-Analysis-blueviolet?style=flat-square"/>
+<img src="https://img.shields.io/badge/CSV%2FJSON-Evidence-orange?style=flat-square"/>
+<img src="https://img.shields.io/badge/Service-Matching-brightgreen?style=flat-square"/>
+<img src="https://img.shields.io/badge/Risk-Scoring-yellow?style=flat-square"/>
+<img src="https://img.shields.io/badge/Testing-Manual%20QA-success?style=flat-square"/>
 </p>
 
-<pre>
+</div>
+
+
+# 📌 Table of Contents
+
+- [Project Summary](#-project-summary)
+- [Why This Project Matters](#-why-this-project-matters)
+- [Key Features](#-key-features)
+- [Technology Stack](#-technology-stack)
+- [Dependencies](#-dependencies)
+- [System Architecture](#-system-architecture)
+- [Working Flow](#-working-flow)
+- [Backend Routing Flow](#-backend-routing-flow)
+- [Client-Server Sequence](#-client-server-sequence)
+- [Tracking Algorithm Flow](#-tracking-algorithm-flow)
+- [Dataset and Evidence Flow](#-dataset-and-evidence-flow)
+- [Logical Relational Data Model](#-logical-relational-data-model)
+- [Folder Structure](#-folder-structure)
+- [Backend API Routes](#-backend-api-routes)
+- [Important Parameters](#-important-parameters)
+- [Dashboard Overview](#-dashboard-overview)
+- [Software Testing and Quality Assurance](#-software-testing-and-quality-assurance)
+- [Installation and Setup](#-installation-and-setup)
+- [Run the Software](#-run-the-software)
+- [Example API Calls](#-example-api-calls)
+- [Generated Output Files](#-generated-output-files)
+- [Algorithmic Contribution](#-algorithmic-contribution)
+- [Security and Cloud Enhancement](#-security-and-cloud-enhancement)
+- [Limitations](#-limitations)
+- [Future Enhancements](#-future-enhancements)
+- [Troubleshooting](#-troubleshooting)
+- [Responsible Use](#-responsible-use)
+
+
+# 🧠 Project Summary
+
+EthereumHeist AML System is a full-stack blockchain forensic investigation platform designed for tracking suspicious Ethereum fund movement.
+
+The system analyzes Ethereum transaction behavior from known heist or suspicious addresses and converts raw blockchain activity into structured AML investigation evidence.
+
+It performs:
+
+- One-hop transaction tracking
+- Multi-hop fund-flow analysis
+- Candidate layering detection
+- Service-provider matching
+- AML risk scoring
+- Graph-based visualization
+- Automated evidence generation
+
+
+The system does not create a new blockchain.
+
+Instead:
+
+
+The main objective is to transform complex blockchain transaction trails into readable forensic information for researchers, analysts, and investigators.
+
+
+
+# 🎯 Why This Project Matters
+
+Ethereum transactions are publicly available, but investigating suspicious fund movement manually is difficult.
+
+Criminal activities may involve:
+
+- Multiple wallet transfers
+- Token swaps
+- Smart contracts
+- Exchanges
+- Bridges
+- Layering through intermediate addresses
+
+
+Traditional blockchain explorers provide transaction history, but they do not automatically provide:
+
+- Investigation paths
+- Suspicious movement patterns
+- Risk prioritization
+- Evidence generation
+
+
+EthereumHeist solves this problem by converting raw blockchain data into:
+
+📁 CSV evidence files
+
+📄 JSON investigation summaries
+
+🔗 Graph-ready transaction networks
+
+📊 Interactive dashboard visualization
+
+🧾 Transaction-level investigation tables
+
+🛡️ AML risk-priority outputs
+
+
+
+# ✨ Key Features
+
+
+| Feature | Description | Benefit |
+|---|---|---|
+| 🔍 One-hop Tracking | Tracks direct outgoing transfers from suspicious addresses | Fast initial investigation |
+| 🧭 Multi-hop Tracking | Recursively follows transaction paths | Detects possible layering |
+| 🪙 ETH + ERC20 Support | Handles multiple Ethereum transaction types | More complete fund analysis |
+| 🧹 Beta Filtering | Removes tiny/noisy transfers | Cleaner graph generation |
+| 🏦 Service Matching | Matches addresses with known services | Identifies possible endpoints |
+| ⚠️ Risk Scoring | Assigns AML risk levels | Helps prioritize investigation |
+| 🕸️ Graph Generation | Creates node-edge transaction networks | Enables visualization |
+| 📊 Dashboard | Displays charts and evidence tables | Easier analysis |
+| 🧪 Batch Experiment | Runs multiple investigation cases | Supports evaluation |
+| 📦 Evidence Export | Generates CSV and JSON outputs | Reproducible analysis |
+
+
+
+# 🧰 Technology Stack
+
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| Frontend | Next.js, React, TypeScript | Interactive dashboard |
+| Backend | FastAPI, Uvicorn | REST API services |
+| Data Processing | Pandas, NumPy | Transaction processing |
+| Graph Processing | NetworkX, igraph | Fund-flow graph analysis |
+| Database | DuckDB | Local analytical storage |
+| API Communication | Axios / Fetch | Frontend-backend communication |
+| Visualization | Recharts, Cytoscape | Charts and graph visualization |
+| Blockchain Data | Ethereum CSV Data, Etherscan API | Transaction source |
+| Testing | Postman, SQL, Browser DevTools, Jira | QA validation |
+
+# 📦 Dependencies
+
+
+## Backend Dependencies
+
+Backend packages are available in:
+
+
+| Package | Purpose |
+|---|---|
+| FastAPI | Backend API framework |
+| Uvicorn | ASGI server |
+| Pandas | CSV and transaction processing |
+| NumPy | Numerical operations |
+| Requests | External API communication |
+| Python-dotenv | Environment configuration |
+| NetworkX | Graph analysis |
+| igraph | Graph processing |
+| DuckDB | Local analytical database |
+| PyArrow | Data processing support |
+| Pydantic | Data validation |
+
+
+
+## Frontend Dependencies
+
+
+Frontend packages are available in:
+# 🚀 Backend API Routes
+
+
+The backend exposes REST APIs for blockchain analysis,
+transaction tracking, risk evaluation, and evidence generation.
+
+
+| Endpoint | Method | Description |
+|---|---|---|
+| `/health` | GET | Check backend health |
+| `/dataset/status` | GET | Check dataset availability |
+| `/crawl/address/{address}` | GET | Crawl Ethereum address data |
+| `/track/one-hop/{address}` | GET | Execute direct transaction tracking |
+| `/track/multi-hop/{address}` | GET | Execute multi-hop fund tracking |
+| `/graph/tracking/{file}` | GET | Generate graph visualization data |
+| `/risk/edges/{file}` | GET | Calculate risk scores |
+| `/pipeline/full/{address}` | POST | Execute complete AML pipeline |
+| `/experiment/run` | POST | Run batch experiments |
+
+
+
+# ⚙️ Important Parameters
+
+
+The tracking engine uses configurable parameters
+to control investigation depth and filtering.
+
+
+| Parameter | Description |
+|---|---|
+| `max_depth` | Maximum transaction exploration depth |
+| `beta` | Minimum transfer amount threshold |
+| `max_edges` | Maximum number of generated edges |
+| `time_window` | Transaction filtering period |
+| `risk_threshold` | Suspicious activity threshold |
+| `service_matching` | Enable/disable provider matching |
+
+
+
+Example:
+
+```json
+{
+ "address":"0x123456789",
+ "max_depth":3,
+ "beta":0.1,
+ "max_edges":500
+}
+
+# ⚙️ Important Parameters
+
+...
+
+Example:
+
+```json
+{
+ "address":"0x123456789",
+ "max_depth":3,
+ "beta":0.1,
+ "max_edges":500
+}
+
+continue with the **Dashboard Overview** section.
+
+Paste this next:
+
+```markdown
+# 📊 Dashboard Overview
+
+
+The EthereumHeist dashboard provides an interactive investigation
+environment for analyzing suspicious Ethereum transactions.
+
+
+The dashboard allows analysts to:
+
+- Submit Ethereum addresses for investigation
+- Configure tracking parameters
+- Monitor transaction flow
+- Visualize multi-hop fund movement
+- Analyze risk scores
+- Review service-provider matches
+- Export investigation evidence
+
+
+<div align="center">
+
+<img src="docs/dashboard.png" width="850"/>
+
+</div>
+
+
+
+## Dashboard Components
+
+
+| Component | Description |
+|---|---|
+| Address Input | Accepts suspicious Ethereum wallet addresses |
+| Tracking Configuration | Controls depth, threshold, and filtering parameters |
+| Transaction Graph | Displays fund movement relationships |
+| Risk Panel | Shows AML risk classification |
+| Evidence Table | Displays analyzed transaction records |
+| Export Module | Generates investigation files |
+
+
+
+# 🧪 Software Testing and Quality Assurance
+
+
+The EthereumHeist AML System was validated through manual QA practices
+to ensure functional correctness, API reliability, database consistency,
+and stable frontend-backend communication.
+
+
+## Testing Activities
+
+
+| Testing Type | Description |
+|---|---|
+| Functional Testing | Verified wallet analysis, transaction tracking, risk scoring, graph generation, and evidence generation workflows |
+| Regression Testing | Ensured existing features remained stable after updates |
+| API Testing | Tested REST API endpoints, request validation, response formats, and error handling |
+| Database Testing | Verified transaction storage, retrieval accuracy, and data consistency |
+| Error Handling Testing | Tested invalid inputs, missing parameters, and unexpected scenarios |
+
+
+
+## Testing Tools
+
+
+| Tool | Purpose |
+|---|---|
+| Postman | REST API testing and response validation |
+| SQL | Database verification and data validation |
+| Browser Developer Tools | Frontend debugging and network inspection |
+| Jira | Bug tracking and defect management |
+
+
+
+## QA Documentation
+
+
+Detailed testing documentation is available in:
+
 testing/
-│
+
 ├── Test_Plan.md
+
 ├── Functional_Test_Cases.xlsx
+
 ├── API_Testing.md
+
 ├── Database_Testing.md
+
 ├── Bug_Report.md
+
 ├── Regression_Test_Report.md
+
 ├── Test_Data.md
+
 └── Test_Summary.md
-</pre>
 
 
-<h3>🐞 Defect Reporting Process</h3>
-
-<p>
-Detected issues were documented using professional bug reporting practices.
-Each defect report contains:
-</p>
-
-<ul>
-<li>Bug ID</li>
-<li>Bug Description</li>
-<li>Environment Details</li>
-<li>Steps to Reproduce</li>
-<li>Expected Result</li>
-<li>Actual Result</li>
-<li>Severity Level</li>
-<li>Priority Level</li>
-<li>Resolution Status</li>
-</ul>
 
 
-<h3>📊 Testing Result</h3>
-
-<table>
-
-<tr>
-<th>Testing Category</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td>Functional Testing</td>
-<td>✅ Passed</td>
-</tr>
-
-<tr>
-<td>API Testing</td>
-<td>✅ Passed</td>
-</tr>
-
-<tr>
-<td>Database Testing</td>
-<td>✅ Passed</td>
-</tr>
-
-<tr>
-<td>Regression Testing</td>
-<td>✅ Passed</td>
-</tr>
-
-<tr>
-<td>Error Handling Testing</td>
-<td>✅ Passed</td>
-</tr>
-
-</table>
+## Defect Reporting Process
 
 
-<p>
-The testing process confirmed that the EthereumHeist AML System
-maintains reliable functionality across its core investigation,
-analysis, and evidence-generation workflows.
-</p>
+All identified software issues were documented using a
+standard defect management workflow.
+
+
+Each bug report contains:
+
+
+- Bug ID
+- Issue description
+- Environment details
+- Steps to reproduce
+- Expected result
+- Actual result
+- Severity level
+- Priority level
+- Resolution status
+
+
+
+# 📦 Installation and Setup
+
+
+## Clone Repository
+
+
+```bash
+git clone https://github.com/SayakaMeem/EthereumHeist-System.git
+
+cd EthereumHeist-System
